@@ -298,6 +298,7 @@
   }
 </style>
 
+
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
   <img
@@ -337,6 +338,24 @@
     </svg>
 
   </div>
+
+
+
+
+  <div class="routes">
+    
+    <nav>
+      <a class="button" routerLink="/crisis-list">Crisis Center</a> |
+      <a class="button" routerLink="/heroes-list">Heroes</a>
+    </nav>
+
+    <router-outlet></router-outlet>
+
+  </div>
+
+
+
+
 
   <!-- Resources -->
   <h2>Resources</h2>
@@ -529,6 +548,3 @@
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-
-
-<router-outlet></router-outlet>
