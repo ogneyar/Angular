@@ -13,6 +13,14 @@ app.get('/', function(req, res){
     res.render('index.html');
 });
 
+app.get('/crisis-list', function(req, res){
+    res.render('index.html');
+});
+
+app.get('/heroes-list', function(req, res){
+    res.render('index.html');
+});
+
 var server = http.createServer(app);
 reload(app).then(function () {	
 	server.listen(port, () => console.log(`Starting my server on NodeJS: Listening on ${ port }`));
