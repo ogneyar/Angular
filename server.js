@@ -14,11 +14,11 @@ app.get('/', function(req, res){
 });
 
 app.get('/crisis-list', function(req, res){
-    res.render('index.html');
+    res.render('controllers/crisis.html');
 });
 
 app.get('/heroes-list', function(req, res){
-    res.render('index.html');
+    res.render('controllers/heroes.html');
 });
 
 var server = http.createServer(app);
