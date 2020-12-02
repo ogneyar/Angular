@@ -11,6 +11,8 @@ import { OrganiserComponent } from './organiser/organiser.component';
 import { CalendarComponent } from './organiser/calendar/calendar.component';
 import { OrganiseComponent } from './organiser/organise/organise.component';
 import { SelectorComponent } from './organiser/selector/selector.component';
+import { MomentPipe } from './shared/moment.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,14 @@ import { SelectorComponent } from './organiser/selector/selector.component';
     OrganiserComponent,
     CalendarComponent,
     OrganiseComponent,
-    SelectorComponent
+    SelectorComponent,
+    MomentPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

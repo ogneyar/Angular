@@ -1,4 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import * as moment from 'moment';
+import { DateService } from 'src/app/shared/date.service';
+
+interface Day {
+  value: moment.Moment
+  active: boolean
+  disabled: boolean
+  selected: boolean
+} 
+
+interface Week {
+  days: Day[];
+}
 
 @Component({
   selector: 'app-calendar',
@@ -6,11 +19,49 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calendar.component.scss']
 })
 export class CalendarComponent implements OnInit {
-  constructor() { }
-  ngOnInit(): void { }
 
-  public newData = 13;
+  calendar: Week[];
+
+  constructor(public dateService: DateService) { }
+
+  ngOnInit(): void {
+    this.dateService.date.subscribe(this.generate.bind(this))
+  }
+
+  generate(now: moment.Moment){
+    const startDay = now.clone().startOf('month').startOf('week');
+    const endDay = now.clone().endOf('month').endOf('week');
+
+    const date = startDay.clone().subtract(1, 'day');
+
+    const calendar = [];
+
+    while (date.isBefore(endDay, 'day')) {
+      calendar.push({
+        days: Array(7)
+          .fill(0)
+          .map(() => {
+            const value = date.add(1, 'day').clone();
+            const active = moment().isSame(value, 'date');
+            const disabled = !now.isSame(value, 'month');
+            const selected = now.isSame(value, 'day');
+
+            return { value, active, disabled, selected }
+          })
+
+      })
+    }
+
+   this.calendar = calendar;
+
+  }
+
+  select(day: Day) {
+    if (!day.disabled) this.dateService.changeDate(day.value); 
+  }
+
+  // public newData = 13;
 
 }
 
-export const Data = 11;
+// export const Data = 11;

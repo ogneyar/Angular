@@ -1,8 +1,16 @@
-<h3>{{ title }}</h3>
+<div class="container">
+    <header>
+        <app-selector></app-selector>
+        <!-- <h3>{{ title }}</h3> -->
+        <!-- <p>{{ data }}</p> -->
+    </header>
+    
+    <main>
+        <app-calendar></app-calendar>
+    </main>
 
-<p>{{ data }}</p>
-
-<app-organise></app-organise>
-
-<p>{{ nData.newData }}</p>
-
+    <div>
+        <app-organise></app-organise>
+        <!-- <p>{{ nData.newData }}</p> -->
+    </div>
+</div>

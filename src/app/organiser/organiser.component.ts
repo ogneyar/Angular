@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Data, CalendarComponent } from './calendar/calendar.component';
+import { CalendarComponent } from './calendar/calendar.component';
 
 @Component({
   selector: 'app-organiser',
@@ -10,9 +10,9 @@ export class OrganiserComponent implements OnInit {
   constructor() { }
   ngOnInit(): void { }
 
-  data = Data;
+  // data = Data;
 
-  nData = new CalendarComponent;
+  // nData = new CalendarComponent;
 
   title = 'Органайзер';
 
