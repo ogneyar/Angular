@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  // box-sizing: border-box;
 }
 
 
@@ -300,21 +300,6 @@ svg#clouds {
 
 ul {
   list-style: none;
-}
-
-form {
-  width: 100%;
-  // padding: 0.4rem;
-}
-
-input {
-  display: block;
-  width: 100%;
-  padding: 0.6rem 0;
-  font-size: 1.2rem;
-  border: 1px solid #ccc;
-  outline: none;
-  margin-bottom: 0.5rem;
 }
 
 .button {
