@@ -14,6 +14,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { HouseKipreyComponent } from './house-kiprey/house-kiprey.component';
+import { BaseComponent } from './layouts/base/base.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HouseKipreyComponent } from './house-kiprey/house-kiprey.component';
     SelectorComponent,
     MomentPipe,
     CalculatorComponent,
-    HouseKipreyComponent
+    HouseKipreyComponent,
+    BaseComponent
   ],
   imports: [
     BrowserModule,
