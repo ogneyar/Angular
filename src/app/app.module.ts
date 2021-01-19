@@ -13,6 +13,7 @@ import { MomentPipe } from './shared/moment.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { HouseKipreyComponent } from './house-kiprey/house-kiprey.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CalculatorComponent } from './calculator/calculator.component';
     OrganiseComponent,
     SelectorComponent,
     MomentPipe,
-    CalculatorComponent
+    CalculatorComponent,
+    HouseKipreyComponent
   ],
   imports: [
     BrowserModule,
