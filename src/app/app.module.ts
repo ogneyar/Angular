@@ -14,7 +14,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { HouseKipreyComponent } from './house-kiprey/house-kiprey.component';
-import { BaseComponent } from './layouts/base/base.component';
+import { HeaderComponent } from './house-kiprey/header/header.component';
+import { FooterComponent } from './house-kiprey/footer/footer.component';
+import { HomeTopComponent } from './house-kiprey/home-top/home-top.component';
+import { HomeFormComponent } from './house-kiprey/home-form/home-form.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { BaseComponent } from './layouts/base/base.component';
     MomentPipe,
     CalculatorComponent,
     HouseKipreyComponent,
-    BaseComponent
+    HeaderComponent,
+    FooterComponent,
+    HomeTopComponent,
+    HomeFormComponent
   ],
   imports: [
     BrowserModule,
