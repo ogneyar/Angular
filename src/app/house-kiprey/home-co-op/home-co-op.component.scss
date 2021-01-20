@@ -10,16 +10,19 @@
         padding: 20px 10px;
 
         .co-op-box-head {
+            text-align: center;
             h4 {
                 padding: 10px;
                 font-size: 1.5rem;
-                text-align: center;
+                
+            }
+            a {
+                font-size: 1.8rem;
+                padding: 10px;
             }
         }
         
-        .co-op-box-list {
-            font-size: 1.8rem;
-        }
+        .co-op-box-list {}
         
     }
 }
