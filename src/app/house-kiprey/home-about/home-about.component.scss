@@ -1,11 +1,12 @@
-.top {
-    // background: green;
+.about {
+    background: rgb(229, 226, 255);
     // width: 100%;
     
     padding: 10px;
-    background: rgb(221, 228, 238);
 
-    .top-box {
+    // background: rgb(221, 228, 238);
+
+    .about-box {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -23,18 +24,18 @@
     }
 }
 @media (min-width: 1000px) { // от 1000
-    .top {
+    .about {
         padding: 50px 300px;
     }
 }
 @media (max-width: 999px) and (min-width: 650px) { // от 650 до 1000
-    .top {
+    .about {
         padding: 20px 100px;
     }
 }
 @media (max-width: 450px) { // до 450
-    .top {
-        .top-box {
+    .about {
+        .about-box {
             img {
                 width: 100px;
             }
@@ -45,8 +46,8 @@
     }
 }
 @media (max-width: 350px) { // до 350
-    .top {        
-        .top-box {
+    .about {
+        .about-box {
             img {
                 width: 100px;
             }
